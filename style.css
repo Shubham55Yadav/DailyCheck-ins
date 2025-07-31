@@ -1,0 +1,34 @@
+ body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      max-width: 600px;
+      margin: auto;
+      background-color: #f0f0f0;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    select, input, button {
+      margin: 5px;
+      padding: 8px;
+      font-size: 16px;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    li {
+      background: white;
+      margin: 5px 0;
+      padding: 10px;
+      border-left: 5px solid #3498db;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    li span {
+      cursor: pointer;
+    }
+    .readonly {
+      opacity: 0.6;
+    }
