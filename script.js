@@ -14,6 +14,11 @@ const fixedTasks = {
         { text: "Gym", done: false },
         { text: "Academics [2 hours]", done: false },
         { text: "Leetcode 2 Q", done: false }
+      ],
+      Abhi: [
+        { text: "No Gym", done: false },
+        { text: "No Academics [2 hours]", done: false },
+        { text: "Leetcode 3 Q", done: false }
       ]
     };
 
