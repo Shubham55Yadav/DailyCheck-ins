@@ -3,28 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <title>DailyCheck-ins App</title>
- <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <h1>DailyCheck-ins</h1>
-
-  <label>Select User: </label>
-  <select id="user-select">
-    <option value="Shubham">Shubham (Editable)</option>
-    <option value="Rajdeep">Rajdeep (View Only)</option>
-    <option value="Arnab">Arnab (View Only)</option>
-    <option value="Abhi">Abhi (View Only)</option>
-  </select>
-
-  <div id="todo-section">
-    <h2>To-Do List for <span id="user-name">Shubham</span></h2>
-    <input type="text" id="task-input" placeholder="New task">
-    <button id="add-btn">Add</button>
-    <ul id="todo-list"></ul>
+  <div id="login-container">
+    <h1>DailyCheck-ins Login</h1>
+    <form id="login-form">
+      <label for="username">Username:</label>
+      <input type="text" id="username" required>
+      
+      <label for="password">Password:</label>
+      <input type="password" id="password" required>
+      
+      <button type="submit">Login</button>
+    </form>
   </div>
 
- <script src="script.js"></script>
+  <div id="app-container" style="display:none;">
+    <h1>DailyCheck-ins</h1>
+    <div class="user-info">
+      <span>Logged in as: <strong id="current-user"></strong></span>
+      <button id="logout-btn">Logout</button>
+    </div>
 
+    <div class="view-controls">
+      <label>View Tasks for: </label>
+      <select id="user-select"></select>
+    </div>
+
+    <div id="todo-section">
+      <h2>To-Do List for <span id="user-name"></span></h2>
+      <div id="edit-controls" style="display:none;">
+        <input type="text" id="task-input" placeholder="New task">
+        <button id="add-btn">Add</button>
+      </div>
+      <ul id="todo-list"></ul>
+    </div>
+  </div>
+
+  <script src="script2.js"></script>
 </body>
 </html>
